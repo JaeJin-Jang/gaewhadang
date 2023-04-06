@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=1620"><!--다른 매체에서도 너비 오류 없이 볼 수 있게-->
+    <link href="./img_main/pbicon_logo.png" rel="icon" type="image/png" sizes="32x32"><!--파비콘-->
+    <title>개화당</title>
+    <style>
+        @import url('https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css');
+    </style>
+
+    <!-- 지역선택 -->
+    <link rel="stylesheet" href="./css/page1_choice.css">
+    <!-- 날짜 css -->
+    <link rel="stylesheet" href="./css/datepicker.min.css">
+    <!-- 예약 창 꾸미기 css -->
+    <link rel="stylesheet" href="./css/sub1_choice2.css">
+
+    <!-- MY css -->
+    <link rel="stylesheet" href="./css/sub1.css">
+</head>
+
+<body>
+
+    <!-- top st -->
+
+    <div class="top">
+        <div class="top_d1">
+            <a href="./index.html"><img src="./img_main/top_logo.png" alt="logo"></a>
+            <ul class="top_ul">
+                <li><a href="./sub1.html" class="top_a1">숙소찾기</a></li>
+                <li><a href="./sub3.html" class="top_a2">소개하기</a></li>
+                <li><a href="./sub4.html" class="top_a3">프로모션</a></li>
+                <li><a href="./sub2.html" class="top_a4">소 식</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- top end -->
+
+
+    <!-- right st -->
+
+    <div class="right">
+        <div class="right_d1">
+            <ul>
+                <li><a href="#" class="right_d1_a1">예약하기</a></li>
+                <li><a href="#" class="right_d1_a1">문의하기</a></li>
+                <li><a href="#" class="right_d1_a1">로그인</a></li>
+                <li><a href="#" class="right_d1_a1">마이페이지</a></li>
+                <li><a href="#" class="right_d1_a1">KO/EN</a></li>
+            </ul>
+        </div>
+        <div class="right_d2">
+            <ul>
+                <li><a href="#" class="right_d1_sns"><img src="./img_main/right_sns1.png" alt="sns_img1"></a></li>
+                <li><a href="#" class="right_d1_sns"><img src="./img_main/right_sns2.png" alt="sns_img1"></a></li>
+                <li><a href="#" class="right_d1_sns"><img src="./img_main/right_sns3.png" alt="sns_img1"></a></li>
+                <li><a href="#" class="right_d1_sns"><img src="./img_main/right_sns4.png" alt="sns_img1"></a></li>
+                <li><a href="#" class="right_d1_sns"><img src="./img_main/right_sns5.png" alt="sns_img1"></a></li>
+                <li><a href="#" class="right_d1_sns"><img src="./img_main/right_sns6.png" alt="sns_img1"></a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- right end -->
+
+
+    <!-- page1 st -->
+
+    <div class="page1_bg">
+        <div class="page1">
+            <h1>숙소찾기</h1>
+            <form action="#none" method="post">
+                <div class="page1_d1">
+                    <img src="./img_sub1/page1_l1.png" alt="윗선">
+                    <div class="page1_d1_a">
+                        <div class="page1_d1_a_1">
+                            <p>숙소/지역</p>
+                            <input type="text" placeholder="여행지를 입력하세요">
+                            <input type="button" value="지역선택" class="page1_d1_a_search" id="wrap">
+                            <p>체크인</p>
+                            <!-- <input type="button" value="입실날자 선택" class="page1_d1_a_bt"> -->
+                            <input id="datepicker1" type="text" placeholder="입실날자 선택">
+                            <p>체크아웃</p>
+                            <!-- <input type="button" value="퇴실날자 선택" class="page1_d1_a_bt"> -->
+                            <input id="datepicker2" type="text" placeholder="퇴실날자 선택">
+                        </div>
+                        <div class="page1_d1_a_2">
+                            <a href="#" target="_blank"><img src="./img_sub1/page1_reset.png" alt="리셋"></a>
+                        </div>
+                    </div>
+                    <div class="page1_d1_a_searchpage">
+                    </div>
+                    <div class="page1_d1_b">
+                        <div class="page1_d1_b_1">
+                            <!-- <button type="button">
+                                <p>인원 수</p>
+                                <img src="./img_sub1/page1_downbar.png" alt="다운바">
+                            </button>
+                            <button type="button">
+                                <p>가격범위</p>
+                                <img src="./img_sub1/page1_downbar.png" alt="다운바">
+                            </button>
+                            <button type="button">
+                                <p>숙소유형</p>
+                                <img src="./img_sub1/page1_downbar.png" alt="다운바">
+                            </button>
+                            <button type="button">
+                                <p>숙소테마</p>
+                                <img src="./img_sub1/page1_downbar.png" alt="다운바">
+                            </button> -->
+                            <div class="number">
+                                <div class="label">인원수 <img src="./img_sub1/page1_downbar.png" alt="리스트 펼치기"></div>
+                                <ul class="optionList">
+                                    <li class="optionItem">1</li>
+                                    <li class="optionItem">2</li>
+                                    <li class="optionItem">3</li>
+                                    <li class="optionItem">4</li>
+                                    <li class="optionItem">5</li>
+                                </ul>
+                            </div>
+                            <div class="number">
+                                <div class="label">가격범위 <img src="./img_sub1/page1_downbar.png" alt="리스트 펼치기"></div>
+                                <ul class="optionList">
+                                    <li class="optionItem">100,000원 이하</li>
+                                    <li class="optionItem">300,000원 이하</li>
+                                    <li class="optionItem">500,000원 이하</li>
+                                    <li class="optionItem">1,000,000원 이하</li>
+                                    <li class="optionItem">1,000,000원 초과</li>
+                                </ul>
+                            </div>
+                            <div class="number">
+                                <div class="label">숙소유형 <img src="./img_sub1/page1_downbar.png" alt="리스트 펼치기"></div>
+                                <ul class="optionList">
+                                    <li class="optionItem">개인실</li>
+                                    <li class="optionItem">다인실</li>
+                                    <li class="optionItem">집전체</li>
+                                    <li class="optionItem">파티룸</li>
+                                    <li class="optionItem">기타</li>
+                                </ul>
+                            </div>
+                            <div class="number">
+                                <div class="label">건물유형 <img src="./img_sub1/page1_downbar.png" alt="리스트 펼치기"></div>
+                                <ul class="optionList">
+                                    <li class="optionItem">단독 주택</li>
+                                    <li class="optionItem">다세대 주택</li>
+                                    <li class="optionItem">게스트용 별채</li>
+                                    <li class="optionItem">아파트</li>
+                                    <li class="optionItem">호텔</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="page1_d1_b_2">
+                            <a href="#"><img src="./img_sub1/page1_point.png" alt="위치"></a>
+                        </div>
+                    </div>
+                    <img src="./img_sub1/page1_l2.png" alt="아랫선">
+                </div>
+                <input type="submit" value="SEARCH" class="page1_d1_submit">
+            </form>
+
+            <!-- page1 form 선택시 페이지꾸미기 -->
+            <div class="page1_choice_bg">
+                <div class="page1_choice" id="popup">
+                    <div class="page1_cho_0">
+                        <h1>어디로 떠날까요?</h1>
+                        <hr>
+                    </div>
+                    <div class="page1_cho_1">
+                        <h3>국내</h3>
+                        <button type="button">국내전체</button>
+                        <button type="button">서울</button>
+                        <button type="button">제주</button>
+                        <button type="button">부산</button>
+                        <button type="button">경기</button>
+                        <button type="button">인천</button>
+                        <button type="button">강원</button>
+                        <button type="button">경상</button>
+                        <button type="button">대구</button>
+                        <button type="button">울산</button>
+                        <button type="button">충청</button>
+                        <button type="button">대전</button>
+                        <button type="button">전라</button>
+                        <button type="button">광주</button>
+                        <h3>일본</h3>
+                        <button type="button">일본전체</button>
+                        <button type="button">도쿄</button>
+                        <button type="button">오사카</button>
+                        <button type="button">후쿠오카</button>
+                        <button type="button">삿포로</button>
+                        <button type="button">교토</button>
+                        <button type="button">오키나와</button>
+                        <button type="button">기타</button>
+                        <h3>기타 해외</h3>
+                        <button type="button">대만</button>
+                        <button type="button">베트남</button>
+                        <button type="button">라오스</button>
+                        <button type="button">태국</button>
+                        <button type="button">홍콩</button>
+                        <button type="button">기타</button>
+                    </div>
+                    <div class="page1_cho_2">
+                        <input type="submit" value="SEARCH" id="search">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- page2 st -->
+
+    <div class="page2_bg">
+        <div class="page2">
+            <div class="page2_d1">
+                <ul id="page2_list">
+                    <li><a href="#none">- 추천순</a></li>
+                    <li><a href="#none">- 인기순</a></li>
+                    <li><a href="#none">- 높은가격순</a></li>
+                    <li><a href="#none">- 낮은가격순</a></li>
+                    <li><a href="#none">- 가까운 거리순</a></li>
+                </ul>
+                <img src="./img_sub1/page2_l1.png" alt="line">
+            </div>
+
+            <div class="page2_d2">
+                <div class="page2_d2_category1">
+                    <div class="page2_d2_c1_text">
+                        <span class="p28">개화당 판포</span>
+                        <p>제주도 / 한경면</p>
+                        <p>기준 2명 (최대 4명)</p>
+                        <span class="p16">￦120,000 ~ ￦180,000</span>
+                        <a href="#none">
+                            <h6>자세히 보기</h6>
+                        </a>
+                    </div>
+                    <div class="page2_d2_c1_img">
+                        <img src="./img_sub1/category_1.png" alt="category img">
+                    </div>
+                </div>
+                <div class="page2_d2_category1">
+                    <div class="page2_d2_c1_text">
+                        <span class="p28">개화당 종로</span>
+                        <p>서울시 / 구기동</p>
+                        <p>기준 1명 (최대 4명)</p>
+                        <span class="p16">￦40,000 ~ ￦100,000</span>
+                        <a href="#none">
+                            <h6>자세히 보기</h6>
+                        </a>
+                    </div>
+                    <div class="page2_d2_c1_img">
+                        <img src="./img_sub1/category_2.png" alt="category img">
+                    </div>
+                </div>
+                <div class="page2_d2_category1">
+                    <div class="page2_d2_c1_text">
+                        <span class="p28">개화당 애월</span>
+                        <p>제주도 / 애월읍</p>
+                        <p>기준 2명 (최대 4명)</p>
+                        <span class="p16">￦110,000 ~ ￦220,000</span>
+                        <a href="#none">
+                            <h6>자세히 보기</h6>
+                        </a>
+                    </div>
+                    <div class="page2_d2_c1_img">
+                        <img src="./img_sub1/category_3.png" alt="category img">
+                    </div>
+                </div>
+                <div class="page2_d2_category1">
+                    <div class="page2_d2_c1_text">
+                        <span class="p28">개화당 망원</span>
+                        <p>서울시 / 마포구</p>
+                        <p>기준 2명 (최대 4명)</p>
+                        <span class="p16">￦80,000 ~ ￦140,000</span>
+                        <a href="#none">
+                            <h6>자세히 보기</h6>
+                        </a>
+                    </div>
+                    <div class="page2_d2_c1_img">
+                        <img src="./img_sub1/category_4.png" alt="category img">
+                    </div>
+                </div>
+                <div class="page2_d2_category1">
+                    <div class="page2_d2_c1_text">
+                        <span class="p28">개화당 정선</span>
+                        <p>강원도 / 정선군</p>
+                        <p>기준 2명 (최대 4명)</p>
+                        <span class="p16">￦80,000 ~ ￦180,000</span>
+                        <a href="#none">
+                            <h6>자세히 보기</h6>
+                        </a>
+                    </div>
+                    <div class="page2_d2_c1_img">
+                        <img src="./img_sub1/category_5.png" alt="category img">
+                    </div>
+                </div>
+                <div class="page2_d2_category1">
+                    <div class="page2_d2_c1_text">
+                        <span class="p28">개화당 용인</span>
+                        <p>경기도 / 용인시</p>
+                        <p>기준 2명 (최대 6명)</p>
+                        <span class="p16">￦50,000 ~ ￦180,000</span>
+                        <a href="#none">
+                            <h6>자세히 보기</h6>
+                        </a>
+                    </div>
+                    <div class="page2_d2_c1_img">
+                        <img src="./img_sub1/category_6.png" alt="category img">
+                    </div>
+                </div>
+                <div class="page2_d2_category1">
+                    <div class="page2_d2_c1_text">
+                        <span class="p28">개화당 안리</span>
+                        <p>부산시 / 수영구</p>
+                        <p>기준 1명 (최대 2명)</p>
+                        <span class="p16">￦50,000 ~ ￦90,000</span>
+                        <a href="#none">
+                            <h6>자세히 보기</h6>
+                        </a>
+                    </div>
+                    <div class="page2_d2_c1_img">
+                        <img src="./img_sub1/category_7.png" alt="category img">
+                    </div>
+                </div>
+                <div class="page2_d2_category1">
+                    <div class="page2_d2_c1_text">
+                        <span class="p28">개화당 등촌</span>
+                        <p>서울시 / 강서구</p>
+                        <p>기준 1명 (최대 4명)</p>
+                        <span class="p16">￦50,000 ~ ￦120,000</span>
+                        <a href="#none">
+                            <h6>자세히 보기</h6>
+                        </a>
+                    </div>
+                    <div class="page2_d2_c1_img">
+                        <img src="./img_sub1/category_8.png" alt="category img">
+                    </div>
+                </div>
+                <div class="page2_d2_category1">
+                    <div class="page2_d2_c1_text">
+                        <span class="p28">개화당 보문</span>
+                        <p>경상북도 / 경주시</p>
+                        <p>기준 2명 (최대 6명)</p>
+                        <span class="p16">￦150,000 ~ ￦280,000</span>
+                        <a href="#none">
+                            <h6>자세히 보기</h6>
+                        </a>
+                    </div>
+                    <div class="page2_d2_c1_img">
+                        <img src="./img_sub1/category_9.png" alt="category img">
+                    </div>
+                </div>
+                <div class="page2_d2_category1">
+                    <div class="page2_d2_c1_text">
+                        <span class="p28">개화당 청담</span>
+                        <p>서울시 / 강남구</p>
+                        <p>기준 2명 (최대 4명)</p>
+                        <span class="p16">￦180,000 ~ ￦360,000</span>
+                        <a href="#none">
+                            <h6>자세히 보기</h6>
+                        </a>
+                    </div>
+                    <div class="page2_d2_c1_img">
+                        <img src="./img_sub1/category_10.png" alt="category img">
+                    </div>
+                </div>
+            </div>
+
+            <div class="page2_d3">
+                <img src="./img_sub1/page2_l2.png" alt="line">
+                <ul>
+                    <li><a href="sub1.html#page2_list"><img src="./img_sub1/page2_prev.png" alt="이전"></a></li>
+                    <li><a href="sub1.html#page2_list">1</a></li>
+                    <li><a href="sub1.html#page2_list">2</a></li>
+                    <li><a href="sub1.html#page2_list">3</a></li>
+                    <li><a href="sub1.html#page2_list">4</a></li>
+                    <li><a href="sub1.html#page2_list">5</a></li>
+                    <li><a href="sub1.html#page2_list"><img src="./img_sub1/page2_next.png" alt="다음"></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- page2 end -->
+
+
+    <!-- footer st -->
+
+    <div class="footer_bg">
+        <footer>
+            <div class="foot_d1">
+                <img src="./img_main/footer_logo.png" alt="logo">
+                <p><span class="foot_d1_p16">
+                        TEL : 010-0101-0222│FAX : 051-0101-0222<br>
+                        MAIL : bloomhouse@gmail.com
+                    </span></p>
+                <p><span class="foot_d1_p14">
+                        상호명 (주) 개화당│대표자 장재진│부산광역시 중구 중앙대로 26, 13층 (주) 개화당 본점<br>
+                        사업자 등록번호 101-02-02225 │통신판매 신고번호 2022-부산중구-0022 <a href="#none">[사업자등록확인]</a><br>
+                        COPYRIGHT ⓒ 2023 BLOOMHOUSE INC.
+                    </span></p>
+            </div>
+            <div class="foot_d2">
+                <div class="foot_d2_a">
+                    <p><span class="foot_d2_p18">고객센터</span></p>
+                    <p> 운영시간 08:00 - 23:00 (주말ㆍ공휴일 포함)</p>
+                </div>
+                <div class="foot_d2_b">
+                    <a href="#none">
+                        <p><span class="foot_d2_p16">1:1문의</span></p>
+                    </a>
+                    <a href="#none">
+                        <p><span class="foot_d2_p16">예약변경</span></p>
+                    </a>
+                    <a href="#none">
+                        <p><span class="foot_d2_p16">제휴문의</span></p>
+                    </a>
+                    <a href="#none">
+                        <p><span class="foot_d2_p16">환불정책</span></p>
+                    </a>
+                </div>
+                <div class="foot_d2_c">
+                    <a href="#none">
+                        <p>이용약관</p>
+                    </a>
+                    <a href="#none">
+                        <p>개인정보처리방침</p>
+                    </a>
+                </div>
+                <div class="foot_d2_d">
+                    <a href="#none"><img src="./img_main/footer_sns1.png" alt="sns"></a>
+                    <a href="#none"><img src="./img_main/footer_sns2.png" alt="sns"></a>
+                    <a href="#none"><img src="./img_main/footer_sns3.png" alt="sns"></a>
+                    <a href="#none"><img src="./img_main/footer_sns4.png" alt="sns"></a>
+                    <a href="#none"><img src="./img_main/footer_sns5.png" alt="sns"></a>
+                    <a href="#none"><img src="./img_main/footer_sns6.png" alt="sns"></a>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+
+
+
+    <!-- 제이쿼리 -->
+    <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script><!-- 제이쿼리 라이브러리,수정X -->
+
+    <!-- 지역선택 팝업 -->
+    <script src="./script/click.js"></script>
+    <!-- jcurry -->
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js"
+        integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+    <script src="./script/sub1_popup.js"></script>
+
+    <!-- 우측바 스크롤 js -->
+    <script src="./script/nav.js"></script>
+    <script src="./script/nav2_sub1.js"></script>
+
+    <!-- 예약창 만들기 -->
+    <script src="./script/datepicker.min.js"></script>
+    <script src="./script/datepicker.ko.js"></script>
+    <script src="./script/date.js"></script>
+    <script src="./script/select.js"></script>
+
+</body>
+
+</html>

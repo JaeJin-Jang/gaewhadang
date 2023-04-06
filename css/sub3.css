@@ -1,0 +1,563 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+    font-family: 'NanumSquareAc';
+}
+
+@font-face {
+    font-family: 'KIMM_Bold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2212@1.0/KIMM_Bold.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'KIMM_Light';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2212@1.0/KIMM_Light.woff2') format('woff2');
+    font-weight: 300;
+    font-style: normal;
+}
+
+body::-webkit-scrollbar {
+    /*스크롤바 전체*/
+    width: 10px;
+}
+
+body::-webkit-scrollbar-thumb {
+    /*스크롤바 막대*/
+    background-color: #000;
+    background-clip: padding-box;
+    border-radius: 5px;
+    border: 2px solid transparent;
+}
+
+body::-webkit-scrollbar-track {
+    /*스크롤바 막대 외부*/
+    background-color: transparent;
+    /* background-color: #464646; */
+}
+
+body {
+    font-family: 'NanumSquareAc';
+    font-size: 18px;
+    font-weight: 400;
+    /* 'NanumSquareAc' 300 400 700 800 */
+    line-height: 30px;
+    position: relative;
+    min-width: 1620px;
+}
+
+/* h글꼴 사이즈 */
+
+h1 {
+    font-family: 'KIMM_Light';
+    font-size: 34px;
+    font-weight: normal;
+}
+
+h2 {
+    font-family: 'NanumSquareAc';
+    font-weight: 700;
+    font-size: 30px;
+}
+
+h3 {
+    font-family: 'KIMM_Light';
+    font-size: 26px;
+    font-weight: normal;
+}
+
+h4 {
+    font-family: 'NanumSquareAc';
+    font-weight: 400;
+    font-size: 24px;
+}
+
+h5 {
+    font-family: 'NanumSquareAc';
+    font-weight: 400;
+    font-size: 20px;
+}
+
+h6 {
+    font-family: 'NanumSquareAc';
+    font-weight: 700;
+    font-size: 16px;
+    text-decoration: underline;
+}
+
+/* h1 한기연 라이트 34px 300
+h2 나눔스 볼드 30px 700
+h3 한기연 라이트 26px 300
+h4 나눔스 볼드 24px 700
+h5 나눔스 레귤러 20px 400
+h6 나눔스 볼드 16px 언더바 */
+
+
+
+/* top */
+
+.top {
+    background: url(../img_main/top_bg2.png) no-repeat 100.6% top;
+    padding-top: 30px;
+    height: 102px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+}
+
+.top_d1 {
+    margin: 0 auto;
+    width: 85%;
+    min-width: 1320px;
+    max-width: 1620px;
+    display: -ms-flexbox;
+    display: -moz-box;
+    display: -webkit-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.top_d1>a {
+    margin-left: 50px;
+}
+
+.top_ul {
+    margin-right: 50px;
+    width: 750px;
+    display: -ms-flexbox;
+    display: -moz-box;
+    display: -webkit-box;
+    display: flex;
+    justify-content: space-between;
+}
+
+.top_ul a {
+    font-family: 'KIMM_Bold';
+    font-size: 24px;
+    display: block;
+}
+
+.top_ul a:hover {
+    opacity: 0.6;
+}
+
+.top_ul .top_a1:hover {
+    /* 바꾸기 */
+}
+
+.top_ul .top_a2:hover {
+    /* 바꾸기 */
+}
+
+.top_ul .top_a3:hover {
+    /* 바꾸기 */
+}
+
+.top_ul .top_a4:hover {
+    /* 바꾸기 */
+}
+
+
+
+
+/* right */
+
+.right {
+    background: url(../img_main/right_bg1.png) no-repeat 0 0;
+    height: 7450px;
+    width: 112px;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 9;
+}
+
+.right_d1 {
+    margin: 150px auto 150px;
+}
+
+.right_d1 ul a {
+    display: block;
+    text-align: center;
+    margin: 80px 0;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.right_d1 a:hover {
+    opacity: 0.6;
+}
+
+.right_d2 {}
+
+.right_d2 ul {
+    display: -ms-flexbox;
+    display: -moz-box;
+    display: -webkit-box;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.right_d2 ul li {
+    width: 40px;
+    text-align: center;
+}
+
+.right_d2 a:hover img {
+    opacity: 0.6;
+}
+
+/* 우측바 스크롤시 변화 */
+.right {
+    transition: all 0.3s;
+}
+
+.right_down {
+    background-position-y: -200px;
+}
+
+.right_down2 {
+    top: -100px;
+}
+
+
+
+
+/* page1 */
+
+.page1_bg {
+    background-color: #fff;
+    padding: 200px 0 100px;
+    height: 1100px;
+    box-sizing: border-box;
+}
+
+.page1 {
+    margin: 0 auto;
+    width: 720px;
+    text-align: center;
+}
+
+.page1 h1 {
+    margin-bottom: 40px;
+}
+
+.page1_d1 {}
+
+.page1_soundbt {
+    display: -ms-flexbox;
+    display: -moz-box;
+    display: -webkit-box;
+    display: flex;
+    align-items: center;
+}
+
+.page1_soundbt h6 {
+    margin-right: 10px;
+    font-family: 'KIMM_Light';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2212@1.0/KIMM_Light.woff2') format('woff2');
+    font-weight: 300;
+    font-style: normal;
+    line-height: 17px;
+}
+
+
+
+
+/* page2 */
+
+.page2_bg {
+    background-color: #fff;
+    padding: 0px 0 100px;
+    height: 800px;
+    box-sizing: border-box;
+}
+
+.page2 {
+    width: 100%;
+    margin: auto;
+}
+
+.page2_box {
+    width: calc(100% - 222px);
+    max-width: 1800px;
+    margin: 50px auto;
+    overflow: hidden;
+    display: flex;
+}
+
+.page2_box li {
+    flex: 1;
+    width: 1400px;
+    height: 600px;
+    overflow: hidden;
+    position: relative;
+    transition: all 1s;
+}
+
+.page2_box li p {
+    font-family: 'KIMM_Bold';
+    font-size: 50px;
+    font-weight: normal;
+    color: #fff;
+    height: 40px;
+    position: absolute;
+    bottom: 50%;
+    left: 50%;
+    opacity: 1;
+    transition: all 1s;
+    translate: 0px 20px;
+}
+
+.page2_box li h1 {
+    font-family: 'KIMM_Light';
+    font-size: 50px;
+    font-weight: normal;
+    color: #fff;
+    width: 1000px;
+    height: 40px;
+    text-align: center;
+    position: absolute;
+    bottom: 50%;
+    left: 50%;
+    opacity: 0;
+    transition: all 1s;
+    translate: -500px 20px;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.page2_box li span {
+    font-family: 'KIMM_Bold';
+    font-size: 50px;
+    font-weight: normal;
+}
+
+.page2_box li:hover {
+    flex: 7;
+}
+
+.page2_box li:hover p {
+    opacity: 0;
+}
+
+.page2_box li:hover h1 {
+    opacity: 1;
+}
+
+
+
+
+/* page3 */
+
+.page3_bg {
+    background-color: #f0f0f0;
+    padding: 100px 0 100px;
+    height: 1300px;
+    box-sizing: border-box;
+}
+
+.page3 {
+    margin: auto;
+    width: 1320px;
+}
+
+.page3_tab {
+    display: -ms-flexbox;
+    display: -moz-box;
+    display: -webkit-box;
+    display: flex;
+    justify-content: space-between;
+}
+.page3_tab_menu{
+    width: 300px;
+    display: -ms-flexbox;
+    display: -moz-box;
+    display: -webkit-box;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    /* align center 세로간격 조절 */
+}
+.page3_tab_info{
+    width: 1000px;
+}
+
+
+
+
+/* page4 */
+
+.page4_bg {
+    background-color: #fff;
+    padding: 100px 0 100px;
+    height: 1000px;
+    box-sizing: border-box;
+}
+.page4 {
+    margin: 0 auto;
+    width: 1320px;
+}
+.page4_d1{
+    display: -ms-flexbox;
+    display: -moz-box;
+    display: -webkit-box;
+    display: flex;
+    align-items: flex-end;
+    margin-bottom: 50px;
+}
+.page4_mapbt{
+    display: -ms-flexbox;
+    display: -moz-box;
+    display: -webkit-box;
+    display: flex;
+    justify-content: space-between;
+    height: 16px;
+    width: 700px;
+    margin-left: 100px;
+}
+.page4_mapbt> a{
+    line-height: 16px;
+    height: 16px;
+}
+.page4_d2{}
+.page4_d2 .mapchange_1{}
+.page4_d2 .mapchange_2, 
+.page4_d2 .mapchange_3, 
+.page4_d2 .mapchange_4, 
+.page4_d2 .mapchange_5, 
+.page4_d2 .mapchange_6, 
+.page4_d2 .mapchange_7, 
+.page4_d2 .mapchange_8, 
+.page4_d2 .mapchange_9{
+    display: none;
+}
+
+
+
+
+/* footer */
+
+.footer_bg{
+    position: relative;
+    background-color: #464646;
+    height: 300px;
+    padding: 50px;
+    box-sizing: border-box;
+    z-index: 15;
+}
+footer{
+    width: 1320px;
+    margin: auto;
+    display: -ms-flexbox;
+    display: -moz-box;
+    display: -webkit-box;
+    display: flex;
+    justify-content: space-between;
+}
+.foot_d1 img{
+    margin-bottom: 20px;
+}
+.foot_d1 p{
+    color: #fff;
+}
+.foot_d1 p .foot_d1_p16{
+    display: inline-block;
+    font-size: 16px;
+    line-height: 25px;
+    margin-bottom: 20px;
+}
+.foot_d1 p .foot_d1_p14{
+    display: inline-block;
+    font-size: 14px;
+    line-height: 20px;
+}
+.foot_d1_p14 a{
+    color: #fff;
+}
+.foot_d1_p14 a:hover{
+    opacity: 0.6;
+}
+.foot_d2{
+    color: #fff;
+    width: 365px;
+}
+.foot_d2_a{
+    display: -ms-flexbox;
+    display: -moz-box;
+    display: -webkit-box;
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+.foot_d2_p18{
+    font-size: 18px;
+}
+.foot_d2_b{
+    display: -ms-flexbox;
+    display: -moz-box;
+    display: -webkit-box;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+.foot_d2_b a{
+    width: 80px;
+    box-sizing: border-box;
+    text-align: center;
+    color: #fff;
+    font-size: 16px;
+    border-radius: 5px;
+    border: #fff 1.5px solid;
+    padding:0px 5px;
+}
+.foot_d2_b a:hover{
+    color: #464646;
+    background-color: #fff;
+    font-weight: bold;
+}
+.foot_d2_c{
+    display: -ms-flexbox;
+    display: -moz-box;
+    display: -webkit-box;
+    display: flex;
+    justify-content: right;
+    margin-bottom: 40px;
+}
+.foot_d2_c a{
+    color: #fff;
+    margin-left: 20px;
+    font-size: 14px;
+}
+.foot_d2_c a:hover{
+    opacity: 0.6;
+}
+.foot_d2_d{
+    display: -ms-flexbox;
+    display: -moz-box;
+    display: -webkit-box;
+    display: flex;
+    justify-content: right;
+}
+.foot_d2_d a{
+    display: block;
+    margin-left: 25px;
+}
+.foot_d2_d a:hover img{
+    opacity: 0.6;
+}

@@ -1,0 +1,80 @@
+/* page1 form 선택시 페이지꾸미기 */
+.page1_choice{
+    margin: auto;
+    box-sizing: border-box;
+    background-color: #f6f6f6;
+    border-radius: 10px;
+    width: 1200px;
+    height: 700px;
+    padding: 45px;
+    display: -ms-flexbox;
+    display: -moz-box;
+    display: -webkit-box;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    position: relative;
+    text-align: left;
+}
+.page1_choice h1{
+    margin-bottom: 40px;
+    text-align: center;
+}
+.page1_choice hr{
+    margin-bottom: 40px;
+    width: 100%;
+}
+.page1_choice h3{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.page1_choice button{
+    width: 80px;
+    height: 30px;
+    background: none;
+    border: rgba(0, 0, 0, 0.6) solid 1px;
+    border-radius: 15px;
+    color: #000;
+    font-family: 'NanumSquareAc';
+    font-size: 14px;
+    line-height: 14px;
+    font-weight: 400;
+    cursor: pointer;
+    margin-bottom: 10px;
+    transition: all 0.8s;
+}
+.page1_choice button:hover{
+    background: #000;
+    color: #fff;
+    font-weight: bold;
+}
+.page1_choice button:checked{
+    background: #000;
+    color: #fff;
+    font-weight: bold;
+}
+.page1_cho_0{
+    margin: auto;
+    width: 1000px;
+}
+.page1_cho_1{
+    width: 1120px;
+}
+.page1_cho_2{
+    width: 100%;
+    text-align: center;
+}
+.page1_cho_2 input{
+    width: 160px;
+    height: 40px;
+    background: black;
+    border: rgba(0, 0, 0, 0.6) solid 1px;
+    border-radius: 5px;
+    color: #fff;
+    font-family: 'KIMM_Light';
+    font-size: 18px;
+    font-weight: 400;
+    cursor: pointer;
+    margin: 40px 0 10px;
+    transition: all 0.8s;
+}

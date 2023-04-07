@@ -212,11 +212,16 @@ h6 나눔스 볼드 16px 언더바 */
 
 .header_bg{
     background-color: #fff;
-    height: 940px;
+    height: 1080px;
     box-sizing: border-box;
     position: relative;
 }
 header{
+}
+header video{
+    margin: auto;
+    display: block;
+    max-width: 1910px;
 }
 header img{
     display: block;

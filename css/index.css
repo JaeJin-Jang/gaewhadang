@@ -47,7 +47,7 @@ body{
     /* 'NanumSquareAc' 300 400 700 800 */
     line-height: 30px;
     position: relative;
-    min-width: 1620px;
+    min-width: 1920px;
 }
 
 /* h글꼴 사이즈 */
@@ -95,7 +95,7 @@ h6 나눔스 볼드 16px 언더바 */
 /* top */
 
 .top{
-    background: url(../img_main/top_bg2.png) no-repeat 100.6% top;
+    background: url(../img_main/top_bg2.png) no-repeat 101.12% top;
     padding-top: 30px;
     height: 102px;
     position: absolute;
@@ -221,7 +221,8 @@ header{
 header video{
     margin: auto;
     display: block;
-    max-width: 1910px;
+    /* max-width: 1910px; */
+    max-width: 1920px;
 }
 header img{
     display: block;
@@ -396,6 +397,7 @@ header .form{
 /* page4 */
 
 .page4_bg{
+    margin: auto;
     height: 700px;
     padding: 150px 0;
     background-color: #fff;
@@ -404,7 +406,7 @@ header .form{
 .page4{
     margin:0 auto;
     position: relative;
-    background: url(../img_main/page4_monthpick_full.png) no-repeat;
+    background: url(../img_main/page4_monthpick_full.png) no-repeat center;
     width: 100%;
     height: 390px;
 }
@@ -746,6 +748,7 @@ header .form{
 .footer_bg{
     position: relative;
     background-color: #464646;
+    width: 100%;
     height: 300px;
     padding: 50px;
     box-sizing: border-box;

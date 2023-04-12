@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=1620"><!--다른 매체에서도 너비 오류 없이 볼 수 있게-->
+    <link href="./img_main/pbicon_logo.png" rel="icon" type="image/png" sizes="32x32"><!--파비콘-->
+    <title>개화당</title>
+    <style>
+        @import url('https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css');
+    </style>
+
+    <!-- 슬라이드 css -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" /><!--수정X-->
+    <link href="css/slidebanner.css" rel="stylesheet" type="text/css"><!--디자인에 맞게 수정-->
+
+    <!-- 날짜 css -->
+    <link rel="stylesheet" href="./css/datepicker.min.css">
+    <!-- 예약 창 꾸미기 css -->
+    <link rel="stylesheet" href="./css/form_style.css">
+
+    <!-- MY css -->
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+
+<body>
+
+    <!-- top st -->
+
+    <div class="top">
+        <div class="top_d1">
+            <a href="./index.html"><img src="./img_main/top_logo.png" alt="logo"></a>
+            <ul class="top_ul">
+                <li><a href="./sub1.html" class="top_a1">숙소찾기</a></li>
+                <li><a href="./sub3.html" class="top_a2">소개하기</a></li>
+                <li><a href="./sub4.html" class="top_a3">프로모션</a></li>
+                <li><a href="./sub2.html" class="top_a4">소 식</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- top end -->
+
+
+    <!-- right st -->
+
+    <div class="right">
+        <div class="right_d1">
+            <ul>
+                <li><a href="#" class="right_d1_a1">예약하기</a></li>
+                <li><a href="#" class="right_d1_a1">문의하기</a></li>
+                <li><a href="#" class="right_d1_a1">로그인</a></li>
+                <li><a href="#" class="right_d1_a1">마이페이지</a></li>
+                <li><a href="#" class="right_d1_a1">KO/EN</a></li>
+            </ul>
+        </div>
+        <div class="right_d2">
+            <ul>
+                <li><a href="#" class="right_d1_sns"><img src="./img_main/right_sns1.png" alt="sns_img1"></a></li>
+                <li><a href="#" class="right_d1_sns"><img src="./img_main/right_sns2.png" alt="sns_img1"></a></li>
+                <li><a href="#" class="right_d1_sns"><img src="./img_main/right_sns3.png" alt="sns_img1"></a></li>
+                <li><a href="#" class="right_d1_sns"><img src="./img_main/right_sns4.png" alt="sns_img1"></a></li>
+                <li><a href="#" class="right_d1_sns"><img src="./img_main/right_sns5.png" alt="sns_img1"></a></li>
+                <li><a href="#" class="right_d1_sns"><img src="./img_main/right_sns6.png" alt="sns_img1"></a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- right end -->
+
+
+    <!-- header st -->
+
+    <div class="header_bg">
+        <header>
+            <div class="hd_video1">
+                <video src="./img_main/mainpage_video2.mp4" loop autoplay muted></video>
+                <!-- <img src="./img_main/hd_video1.jpg" alt="video"> -->
+            </div>
+            <div class="hd_d1"></div>
+
+            <form action="#none" method="post">
+            <div class="form">
+                <div>
+                    <h2>지역</h2>
+                    <div class="site">
+                        <div class="label">예약지역</div>
+                        <ul class="optionList">
+                            <li class="optionItem">서울</li>
+                            <li class="optionItem">부산</li>
+                            <li class="optionItem">제주</li>
+                            <li class="optionItem">강원</li>
+                            <li class="optionItem">경기</li>
+                            <li class="optionItem">경상</li>
+                            <li class="optionItem">충청</li>
+                            <li class="optionItem">전라</li>
+                            <li class="optionItem">국외</li>
+                        </ul>
+                    </div>
+                </div>
+                <div>
+                    <ul class="date">
+                        <li>
+                            <h2>체크인</h2>
+                            <input id="datepicker1" type="text" placeholder="날짜를 선택해 주세요.">
+                        </li>
+                        <li>-</li>
+                        <li>
+                            <h2>체크아웃</h2>
+                            <input id="datepicker2" type="text" placeholder="날짜를 선택해 주세요.">
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h2>어른</h2>
+                    <div class="number">
+                        <div class="label">인원 수</div>
+                        <ul class="optionList">
+                            <li class="optionItem">1</li>
+                            <li class="optionItem">2</li>
+                            <li class="optionItem">3</li>
+                            <li class="optionItem">4</li>
+                            <li class="optionItem">5</li>
+                        </ul>
+                    </div>
+                </div>
+                <div>
+                    <h2>어린이</h2>
+                    <div class="number">
+                        <div class="label">인원 수</div>
+                        <ul class="optionList">
+                            <li class="optionItem">1</li>
+                            <li class="optionItem">2</li>
+                            <li class="optionItem">3</li>
+                            <li class="optionItem">4</li>
+                            <li class="optionItem">5</li>
+                        </ul>
+                    </div>
+                </div>
+                <div>
+                    <h2>예약실</h2>
+                    <div class="number">
+                        <div class="label">인원 수</div>
+                        <ul class="optionList">
+                            <li class="optionItem">1</li>
+                            <li class="optionItem">2</li>
+                            <li class="optionItem">3</li>
+                            <li class="optionItem">4</li>
+                            <li class="optionItem">5</li>
+                        </ul>
+                    </div>
+                </div>
+                <input type="submit" value="SEARCH" class="btn">
+            </div>
+        </form>
+        </header>
+    </div>
+    
+
+    <!-- header end -->
+
+
+    <!-- page1 st -->
+
+    <div class="page1_bg">
+        <div class="page1">
+            <h1>1월 인기 개화당 숙소</h1>
+            <!-- 슬리이드 -->
+            <div class="swiper-container slide">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="page1_d1_a">
+                            <a href="#none">
+                                <div class="page1_d1_box">
+                                    <h4>경기도 / 양주</h4>
+                                    <h2>개화당 양주</h2>
+                                    <h6>더 알아보기</h6>
+                                </div>
+                            </a>
+                            <img src="./img_main/page1_best1.png" alt="page1_popular1">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="page1_d1_a">
+                            <a href="#none">
+                                <div class="page1_d1_box">
+                                    <h4>강원도 / 양양</h4>
+                                    <h2>개화당 하조</h2>
+                                    <h6>더 알아보기</h6>
+                                </div>
+                            </a>
+                            <img src="./img_main/page1_best2.png" alt="page1_popular2">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="page1_d1_a">
+                            <a href="#none">
+                                <div class="page1_d1_box">
+                                    <h4>서울 / 성북구</h4>
+                                    <h2>개화당 정릉</h2>
+                                    <h6>더 알아보기</h6>
+                                </div>
+                            </a>
+                            <img src="./img_main/page1_best3.png" alt="page1_popular3">
+                        </div>
+                    </div>
+                </div>
+                <!-- 화살표 버튼 -->
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <!-- 블릿 버튼 -->
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- page1 end -->
+
+
+    <!-- page2 st -->
+
+    <div class="page2_bg">
+        <div class="page2">
+            <h1>이달의 특가 개화당</h1>
+            <div class="page2_d1">
+                <a href="#none"><div class="page2_img1">
+                    <img src="./img_main/page2_discount1.jpg" alt="#">
+                    <div class="page2_d1_box">
+                        <h4>D-3</h4>
+                    </div>
+                </div></a>
+                <h3>개화당 종로</h3>
+                <p>서울시 종로구<br>￦ 40,000 ~</p>
+                <a href="#none">
+                    <h6>더 알아보기</h6>
+                </a>
+            </div>
+            <div class="page2_d1">
+                <a href="#none"><div class="page2_img1">
+                    <img src="./img_main/page2_discount2.jpg" alt="#">
+                    <div class="page2_d1_box">
+                        <h4>D-16</h4>
+                    </div>
+                </div></a>
+                <h3>개화당 등촌</h3>
+                <p>서울시 강서구<br>￦ 50,000 ~</p>
+                <a href="#none">
+                    <h6>더 알아보기</h6>
+                </a>
+            </div>
+            <div class="page2_d1">
+                <a href="#none"><div class="page2_img1">
+                    <img src="./img_main/page2_discount3.jpg" alt="#">
+                    <div class="page2_d1_box">
+                        <h4>D-21</h4>
+                    </div>
+                </div></a>
+                <h3>개화당 용인</h3>
+                <p>경기도 용인<br>￦ 50,000 ~</p>
+                <a href="#none">
+                    <h6>더 알아보기</h6>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- page2 end -->
+
+
+    <!-- page3 st -->
+
+    <div class="page3_bg">
+        <div class="page3">
+            <h1>힐링을 위한 여행, 개화당과 함께</h1>
+            <!-- 슬리이드 -->
+            <div class="swiper-container slide">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="page3_d1_a">
+                            <a href="#none">
+                                <div class="page3_d1_box">
+                                    <h4>경기도 / 화성</h4>
+                                    <h2>개화당 화성</h2>
+                                    <h6>더 알아보기</h6>
+                                </div>
+                            </a>
+                            <img src="./img_main/page3_pick1.png" alt="page3_pick1">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="page3_d1_a">
+                            <a href="#none">
+                                <div class="page3_d1_box">
+                                    <h4>경상북도 / 경주</h4>
+                                    <h2>개화당 서라</h2>
+                                    <h6>더 알아보기</h6>
+                                </div>
+                            </a>
+                            <img src="./img_main/page3_pick2.png" alt="page3_pick2">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="page3_d1_a">
+                            <a href="#none">
+                                <div class="page3_d1_box">
+                                    <h4>제주 / 애월읍</h4>
+                                    <h2>개화당 애월</h2>
+                                    <h6>더 알아보기</h6>
+                                </div>
+                            </a>
+                            <img src="./img_main/page3_pick3.png" alt="page3_pick3">
+                        </div>
+                    </div>
+                </div>
+                <!-- 화살표 버튼 -->
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <!-- 블릿 버튼 -->
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- page3 end -->
+
+
+    <!-- page4 start -->
+
+    <div class="page4_bg">
+        <div class="page4">
+            <a href="#none">
+                <div class="page4_d1">
+                    <p>
+                        <span class="page4_p1">이달의 추천 여행지</span>
+                    </p>
+                    <p>
+                        <span class="page4_p2">제주</span>
+                    </p>
+                    <h6>여행지 알아보기</h6>
+                </div>
+            </a>
+        </div>
+    </div>
+
+    <!-- page4 end -->
+
+
+    <!-- page5 st -->
+
+    <div class="page5_bg">
+        <div class="page5">
+            <h1>새롭게 소개하는 개화당</h1>
+            <!-- 슬리이드 -->
+            <div class="swiper-container slide">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="page5_d1_a">
+                            <a href="#none">
+                                <div class="page5_d1_box">
+                                    <h4>서울 / 강남</h4>
+                                    <h2>개화당 청담</h2>
+                                    <h6>더 알아보기</h6>
+                                </div>
+                            </a>
+                            <img src="./img_main/page5_new1.png" alt="page5_new1">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="page5_d1_a">
+                            <a href="#none">
+                                <div class="page5_d1_box">
+                                    <h4>강원도 / 정선</h4>
+                                    <h2>개화당 정선</h2>
+                                    <h6>더 알아보기</h6>
+                                </div>
+                            </a>
+                            <img src="./img_main/page5_new2.png" alt="page5_new2">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="page5_d1_a">
+                            <a href="#none">
+                                <div class="page5_d1_box">
+                                    <h4>일본 / 교토</h4>
+                                    <h2>개화당 마치야</h2>
+                                    <h6>더 알아보기</h6>
+                                </div>
+                            </a>
+                            <img src="./img_main/page5_new3.png" alt="page5_new3">
+                        </div>
+                    </div>
+                </div>
+                <!-- 화살표 버튼 -->
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <!-- 블릿 버튼 -->
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- page5 end -->
+
+
+    <!-- page6 st -->
+
+    <div class="page6_bg">
+        <div class="page6">
+            <h1><span>개화당 소식</span></h1>
+            <div class="page6_bg2">
+                <div class="page6_d1">
+                    <a href="#none">
+                        <div class="page6_d1_a">
+                            <img src="./img_main/page6_magazine1.jpg" alt="magazine1">
+                            <div class="page6_d1_box1">
+                                <p><span class="page6_d1_p1">
+                                        67, 붉은 벽돌과 푸른 해변, 그리고
+                                    </span></p>
+                                <p><span class="page6_d1_p2">
+                                        부산 / 광안리
+                                    </span></p>
+                                <p><span class="page6_d1_p3">
+                                        개화당 리안
+                                    </span></p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="page6_d2">
+                    <a href="#none">
+                        <div class="page6_d2_b">
+                            <img src="./img_main/page6_magazine2.jpg" alt="magazine2">
+                            <div class="page6_d2_box1">
+                                <span class="page6_d2_p1">
+                                    66, 하얀 눈 사이 붉은 마을
+                                </span>
+                                <span class="page6_d2_p2">
+                                    경기도 / 포천
+                                </span>
+                                <span class="page6_d2_p3">
+                                    개화당 산정
+                                </span>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#none">
+                        <div class="page6_d2_b">
+                            <img src="./img_main/page6_magazine3.jpg" alt="magazine3">
+                            <div class="page6_d2_box1">
+                                <span class="page6_d2_p1">
+                                    65, 고요와 고요 사이
+                                </span>
+                                <span class="page6_d2_p2">
+                                    강원도 / 정선
+                                </span>
+                                <span class="page6_d2_p3">
+                                    개화당 정선
+                                </span>
+                            </div>
+                        </div>
+                    </a>
+                    <div class="page6_c2_c">
+                        <h3>개화당 공지사항</h3>
+                        <div class="page6_c2_c1">
+                            <a href="#none"><span class="page6_c2_p1">
+                                    공지사항
+                                </span></a>
+                            <span class="page6_c2_p2">
+                                2023년 3월 개화당 파티안내
+                            </span>
+                            <span class="page6_c2_p3">
+                                2023/02/26
+                            </span>
+                        </div>
+                        <div class="page6_c2_c1">
+                            <a href="#none"><span class="page6_c2_p1">
+                                    공지사항
+                                </span></a>
+                            <span class="page6_c2_p2">
+                                카카오톡 플러스 이벤트 종료
+                            </span>
+                            <span class="page6_c2_p3">
+                                2023/02/20
+                            </span>
+                        </div>
+                        <div class="page6_c2_c1">
+                            <a href="#none"><span class="page6_c2_p1">
+                                    공지사항
+                                </span></a>
+                            <span class="page6_c2_p2">
+                                [필독] 개화당 이용수칙 안내
+                            </span>
+                            <span class="page6_c2_p3">
+                                2022/02/28
+                            </span>
+                        </div>
+                        <div class="page6_c2_c1">
+                            <a href="#none"><span class="page6_c2_p1">
+                                    공지사항
+                                </span></a>
+                            <span class="page6_c2_p2">
+                                [필독] 환불규정 안내
+                            </span>
+                            <span class="page6_c2_p3">
+                                2022/02/28
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- page6 end -->
+
+
+    <!-- page7 st -->
+
+    <div class="page7_bg">
+        <div class="page7">
+            <h1><span>개화당 SHOP</span></h1>
+            <div class="page7_d1">
+                <div class="page7_d1_a">
+                    <a href="#none"><img src="./img_main/page7_shop1.jpg" alt="shop1"></a>
+                    <h5>개화당 X LUSH 샤워젤</h5>
+                    <p>￦ 2,000</p>
+                    <a href="#none">
+                        <h6>자세히보기</h6>
+                    </a>
+                </div>
+                <div class="page7_d1_a">
+                    <a href="#none"><img src="./img_main/page7_shop2.jpg" alt="shop1"></a>
+                    <h5>개화당 어메니티 세트</h5>
+                    <p>￦ 12,000</p>
+                    <a href="#none">
+                        <h6>자세히보기</h6>
+                    </a>
+                </div>
+                <div class="page7_d1_a">
+                    <a href="#none"><img src="./img_main/page7_shop3.jpg" alt="shop1"></a>
+                    <h5>개화당 티셔츠</h5>
+                    <p>￦ 8,000</p>
+                    <a href="#none">
+                        <h6>자세히보기</h6>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- page7 end -->
+
+
+    <!-- footer st -->
+
+    <div class="footer_bg">
+        <footer>
+            <div class="foot_d1">
+                <img src="./img_main/footer_logo.png" alt="logo">
+                <p><span class="foot_d1_p16">
+                        TEL : 010-0101-0222│FAX : 051-0101-0222<br>
+                        MAIL : bloomhouse@gmail.com
+                    </span></p>
+                <p><span class="foot_d1_p14">
+                        상호명 (주) 개화당│대표자 장재진│부산광역시 중구 중앙대로 26, 13층 (주) 개화당 본점<br>
+                        사업자 등록번호 101-02-02225 │통신판매 신고번호 2022-부산중구-0022 <a href="#none">[사업자등록확인]</a><br>
+                        COPYRIGHT ⓒ 2023 BLOOMHOUSE INC.
+                    </span></p>
+            </div>
+            <div class="foot_d2">
+                <div class="foot_d2_a">
+                    <p><span class="foot_d2_p18">고객센터</span></p>
+                    <p> 운영시간 08:00 - 23:00 (주말ㆍ공휴일 포함)</p>
+                </div>
+                <div class="foot_d2_b">
+                    <a href="#none">
+                        <p><span class="foot_d2_p16">1:1문의</span></p>
+                    </a>
+                    <a href="#none">
+                        <p><span class="foot_d2_p16">예약변경</span></p>
+                    </a>
+                    <a href="#none">
+                        <p><span class="foot_d2_p16">제휴문의</span></p>
+                    </a>
+                    <a href="#none">
+                        <p><span class="foot_d2_p16">환불정책</span></p>
+                    </a>
+                </div>
+                <div class="foot_d2_c">
+                    <a href="#none">
+                        <p>이용약관</p>
+                    </a>
+                    <a href="#none">
+                        <p>개인정보처리방침</p>
+                    </a>
+                </div>
+                <div class="foot_d2_d">
+                    <a href="#none"><img src="./img_main/footer_sns1.png" alt="sns"></a>
+                    <a href="#none"><img src="./img_main/footer_sns2.png" alt="sns"></a>
+                    <a href="#none"><img src="./img_main/footer_sns3.png" alt="sns"></a>
+                    <a href="#none"><img src="./img_main/footer_sns4.png" alt="sns"></a>
+                    <a href="#none"><img src="./img_main/footer_sns5.png" alt="sns"></a>
+                    <a href="#none"><img src="./img_main/footer_sns6.png" alt="sns"></a>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+    <!-- 제이쿼리 -->
+
+    <!-- 슬라이드 js -->
+    <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script><!-- 제이쿼리 라이브러리,수정X -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script><!-- 수정X -->
+    <script src="script/slidebanner.js"></script><!--디자인에 맞게 수정-->
+
+    <!-- 우측바 스크롤 js -->
+    <script src="./script/nav.js"></script>
+    <script src="./script/nav2_main.js"></script>
+
+    <!-- 예약창 만들기 -->
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+    <script src="./script/datepicker.min.js"></script>
+    <script src="./script/datepicker.ko.js"></script>
+    <script src="./script/date.js"></script>
+    <script src="./script/select.js"></script>
+</body>
+
+</html>

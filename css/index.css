@@ -47,7 +47,7 @@ body{
     /* 'NanumSquareAc' 300 400 700 800 */
     line-height: 30px;
     position: relative;
-    min-width: 1920px;
+    min-width: 1910px;
 }
 
 /* h글꼴 사이즈 */
@@ -222,7 +222,7 @@ header video{
     margin: auto;
     display: block;
     /* max-width: 1910px; */
-    max-width: 1920px;
+    max-width: 1910px;
 }
 header img{
     display: block;
